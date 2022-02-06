@@ -42,9 +42,9 @@ tuple = ['1', 2, '3', ['4', '5']]
  * 只指定某一个的话，之前的还按照从0自增，之后按照定义值自增
  */
 enum Roles {
-    SUPER_ADMIN,//0
+    SUPER_ADMIN,// 0
     ADMIN = 3,
-    USER//4
+    USER// 4
 }
 
 // any类型(anyScript)
@@ -72,8 +72,9 @@ const errorFunc = (msg: string): never => {
 }
 
 const infiniteFunc = ():never => {
-    let num: number = 1;
+    const _num: number = 1;
     while (true) {
+        console.log(_num)
         // yield num++;
     }
 }
@@ -91,7 +92,7 @@ function getObject(obj: object): void {
 
 // 类型断言与类型强转
 const getLength = (target: string | number): number => {
-    if ((<string>target).length || (target as string).length == 0) {
+    if ((target as string).length || (target as string).length == 0) {
         return (target as string).length;
     } else {
         return target.toString().length;
