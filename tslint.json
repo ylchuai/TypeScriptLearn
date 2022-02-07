@@ -5,10 +5,11 @@
     ],
     "jsRules": {},
     "rules": {
-        "no-console": false,
-        "no-unnecessary-initializer": false,
-        "array-type": false,
-        "triple-equals": false
+        "no-console": [false],
+        "no-unnecessary-initializer": [false],
+        "array-type": [false],
+        "triple-equals": [false],
+        "callable-types": [false]
     },
     "rulesDirectory": []
 }
