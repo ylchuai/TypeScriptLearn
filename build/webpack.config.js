@@ -13,6 +13,14 @@ module.exports = {
             loader: 'ts-loader',
             include: /src/,
             exclude: /node_modules/
+        }, {
+            test: /.jsx?$/,
+            loader: 'babel-loader',
+            query: {
+                presets :['env'],
+                plugins :['@babel/plugin-proposal-class-properties', '@babel/plugin-transform-classes', 'transform-class-properties']
+            },
+            exclude: /node_modules/
         }]
     },
     resolve: {
