@@ -17,9 +17,17 @@ module.exports = {
             test: /.jsx?$/,
             loader: 'babel-loader',
             query: {
-                presets :['env'],
+                presets :[
+                    [
+                        "@babel/preset-env",
+                        {
+                            "targets": "> 0.5%, not dead"
+                        }
+                    ]
+                ],
                 plugins :['@babel/plugin-proposal-class-properties', '@babel/plugin-transform-classes', 'transform-class-properties']
             },
+            include: /src/,
             exclude: /node_modules/
         }]
     },
