@@ -4,4 +4,5 @@
 // import './example/function'
 // import './example/generics'
 // import './example/ES6class1'
-import './example/ES6class2'
+// import './example/ES6class2'
+import './example/class'
