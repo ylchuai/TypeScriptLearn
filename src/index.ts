@@ -10,3 +10,4 @@
 // import './example/inference-compatibility'
 // import './example/advancedType1'
 // import './example/advancedType2'
+import './modules/ES6/index';
