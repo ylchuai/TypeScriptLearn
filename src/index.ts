@@ -9,4 +9,4 @@
 // import './example/enum'
 // import './example/inference-compatibility'
 // import './example/advancedType1'
-import './example/advancedType2'
+// import './example/advancedType2'
